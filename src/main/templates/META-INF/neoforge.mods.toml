@@ -1,0 +1,21 @@
+modLoader = "kotlinforforge"
+loaderVersion = "${kffVersionRange}"
+license = "${modLicense}"
+[[mods]]
+modId = "${modId}"
+version = "${modVersion}"
+displayName = "${modName}"
+authors = "${modAuthors}"
+description = "${modDescription}"
+[[dependencies.${modId}]]
+modId = "neoforge"
+type = "required"
+versionRange = "${neoforgeVersionRange}"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.${modId}]]
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraftVersionRange}"
+ordering = "NONE"
+side = "BOTH"
